@@ -1,0 +1,147 @@
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+}
+
+/* Mobile First */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-stone-100);
+  color: var(--color-stone-600);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 375px;
+  margin: auto;
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--color-stone-900);
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--color-brown-800);
+}
+
+h3 {
+  color: var(--color-rose-800);
+  margin: 0 24px;
+}
+
+hr {
+  background-color: var(--color-stone-150);
+  height: 1px;
+  margin: 0 28px;
+  border: none;
+}
+
+#responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+section {
+  margin: 0 18px;
+  padding: 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: var(--color-rose-50);
+  padding: 16px;
+  margin: 16px;
+  border-radius: 12px;
+}
+
+ul li::marker {
+  color: var(--color-rose-800);
+}
+
+ol li::marker {
+  color: var(--color-brown-800);
+  font-weight: bold;
+}
+
+p.list-text {
+  margin: 12px;
+}
+
+span.list-item {
+  font-weight: 800;
+  color: var(--color-stone-600);
+}
+
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.table dt,
+.table dd {
+  margin: 0;
+  padding: 0 24x;
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+dt {
+  padding: 10px;
+  margin: 0 12px;
+}
+
+dd {
+  color: var(--color-brown-800);
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 12px;
+}
+
+.table dt:last-of-type,
+.table dd:last-of-type {
+  border-bottom: none;
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  main {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  #responsive-image {
+    width: 100%;
+    border-radius: 24px;
+    display: block;
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+    gap: 0;
+  }
+}
