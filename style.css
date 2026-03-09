@@ -42,7 +42,7 @@ body {
 
 h1 {
   font-family: "Young Serif", serif;
-  line-height: 2rem;
+  line-height: 1.2;
   font-weight: 500;
   color: var(--color-stone-900);
 }
