@@ -85,6 +85,12 @@ section {
   font-weight: bold;
 }
 
+ul li,
+ol li {
+  margin: 12px;
+  padding: 0 12px;
+}
+
 ul li::marker {
   color: var(--color-rose-800);
 }
