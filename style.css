@@ -108,7 +108,7 @@ span.list-item {
 .table dt,
 .table dd {
   margin: 0;
-  padding: 0 24x;
+  padding: 16px;
   border-bottom: 1px solid var(--color-stone-150);
 }
 
