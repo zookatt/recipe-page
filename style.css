@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   /* Colors */
   --color-white: hsl(0, 0%, 100%);
@@ -13,14 +21,8 @@
 /* Mobile First */
 .container {
   max-width: 100%;
-  margin: 0;
   background-color: var(--color-white);
   border-radius: 12px;
-}
-
-header {
-  margin: 0;
-  padding: 0;
 }
 
 #responsive-image {
@@ -36,8 +38,6 @@ body {
   font-size: 16px;
   background-color: var(--color-stone-100);
   color: var(--color-stone-600);
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -62,8 +62,7 @@ hr {
 
 section,
 .main-banner {
-  margin: 0 18px;
-  padding: 10px;
+  margin: 18px;
 }
 
 .preparation {
