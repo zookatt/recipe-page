@@ -59,16 +59,21 @@ hr {
   margin: 0 28px;
   border: none;
 }
-
-section,
-.main-banner {
+section {
   margin: 18px;
+  padding: 18px;
+}
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
+  gap: 12px;
 }
 
 .preparation {
   background-color: var(--color-rose-50);
-  padding: 16px;
-  margin: 24px;
+  padding: 36px;
+  margin: 18px;
   border-radius: 12px;
 }
 
@@ -135,7 +140,7 @@ footer {
 }
 
 /* Desktop */
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .container {
     max-width: 700px;
     margin: auto;
